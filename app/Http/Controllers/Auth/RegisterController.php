@@ -62,10 +62,22 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
+            'nombre' => 'required|max:255',
+            'a_paterno' => 'required|max:255',
+            'a_materno' => 'required|max:255',
+            'fecha_naci' => 'required',
+            'genero' => 'required',
+            'semestre' => 'required',
+            'usuario' => 'required|max:255|unique:users',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
             'terms' => 'required',
+        ], [
+            'required' => 'El campo :attribute es obligatorio',
+            'max' => 'El valor de :attribute es demasiado largo',
+            'unique' => 'El :attribute que ingresaste ya existe',
+            'min' => 'El valor de :attribute es demasiado corto',
+            'confirmed' => 'La contraseña no coincide',
         ]);
     }
 
@@ -78,7 +90,13 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'nombre' => $data['nombre'],
+            'a_paterno' => $data['a_paterno'],
+            'a_materno' => $data['a_materno'],
+            'fecha_nacimiento' => $data['fecha_nacimiento'],
+            'genero' => $data['genero'],
+            'semestre' => $data['semestre'],
+            'usuario' => $data['usuario'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
