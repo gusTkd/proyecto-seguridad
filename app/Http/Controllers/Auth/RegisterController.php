@@ -61,6 +61,7 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        // validar request
         return Validator::make($data, [
             'nombre' => 'required|max:255',
             'a_paterno' => 'required|max:255',

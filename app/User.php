@@ -23,7 +23,7 @@ class User extends Authenticatable
         'semestre',
         'usuario',
         'email',
-        'password',
+        'password'
     ];
 
     /**

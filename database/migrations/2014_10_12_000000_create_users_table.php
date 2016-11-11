@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('a_paterno');
             $table->string('a_materno');
             $table->date('fecha_nacimiento');
-            $table->tinyInteger('genero'); // 0 mujer, 1 hombre
+            $table->tinyInteger('genero'); // 0 mujer, 1 hombre, 2 otro
             $table->tinyInteger('semestre');
             $table->string('usuario')->unique();
             $table->string('email')->unique();
