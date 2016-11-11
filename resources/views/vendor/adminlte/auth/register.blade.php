@@ -10,12 +10,12 @@
     <div id="app">
         <div class="register-box">
             <div class="register-logo">
-                <a href="{{ url('/home') }}"><b>Admin</b>LTE</a>
+                <a href="{{ url('/home') }}"><b>Pasa</b>MAC</a>
             </div>
 
             @if (count($errors) > 0)
                 <div class="alert alert-danger">
-                    <strong>Whoops!</strong> {{ trans('adminlte_lang::message.someproblems') }}<br><br>
+                    <strong>Ups!</strong> {{ trans('adminlte_lang::message.someproblems') }}<br><br>
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -28,22 +28,60 @@
                 <p class="login-box-msg">{{ trans('adminlte_lang::message.registermember') }}</p>
                 <form action="{{ url('/register') }}" method="post">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
                     <div class="form-group has-feedback">
-                        <input type="text" class="form-control" placeholder="{{ trans('adminlte_lang::message.fullname') }}" name="name" value="{{ old('name') }}"/>
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" value="{{ old('nombre') }}"/>
                         <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
+
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Apellido paterno" name="a_paterno" value="{{ old('a_paterno') }}"/>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Apellido materno" name="a_materno" value="{{ old('a_materno') }}"/>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" name="fecha_nacimiento" value="{{ old('fecha_nacimiento') }}">
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <label for="genero">Género</label>
+                        <select class="form-control" name="genero">
+                            <option selected disabled>-- Selecciona una opción --</option>
+                            <option value="0" {{ old('genero') == 0 ? 'selected' : '' }}>Mujer</option>
+                            <option value="1" {{ old('genero') == 1 ? 'selected' : '' }}>Hombre</option>
+                            <option value="2" {{ old('genero') == 2 ? 'selected' : '' }}>Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <label for="semestre">Semestre</label>
+                        <input type="number" class="form-control" name="semestre" value="{{ old('semestre') }}" min="1" max="9">
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Usuario" name="usuario" value="{{ old('usuario') }}"/>
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+
                     <div class="form-group has-feedback">
                         <input type="email" class="form-control" placeholder="{{ trans('adminlte_lang::message.email') }}" name="email" value="{{ old('email') }}"/>
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
+
                     <div class="form-group has-feedback">
                         <input type="password" class="form-control" placeholder="{{ trans('adminlte_lang::message.password') }}" name="password"/>
                         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     </div>
+
                     <div class="form-group has-feedback">
                         <input type="password" class="form-control" placeholder="{{ trans('adminlte_lang::message.retrypepassword') }}" name="password_confirmation"/>
                         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
                     </div>
+
                     <div class="row">
                         <div class="col-xs-1">
                             <label>

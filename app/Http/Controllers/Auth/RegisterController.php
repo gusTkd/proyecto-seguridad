@@ -65,7 +65,7 @@ class RegisterController extends Controller
             'nombre' => 'required|max:255',
             'a_paterno' => 'required|max:255',
             'a_materno' => 'required|max:255',
-            'fecha_naci' => 'required',
+            'fecha_nacimiento' => 'required',
             'genero' => 'required',
             'semestre' => 'required',
             'usuario' => 'required|max:255|unique:users',
