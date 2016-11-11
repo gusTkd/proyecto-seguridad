@@ -14,7 +14,7 @@
 
         @if (count($errors) > 0)
             <div class="alert alert-danger">
-                <strong>Whoops!</strong> {{ trans('adminlte_lang::message.someproblems') }}<br><br>
+                <strong>¡Error!</strong> Los datos ingresados, son incorrectos.<br><br>
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -34,25 +34,27 @@
             <div class="form-group has-feedback">
                 <input type="password" class="form-control" placeholder="Contraseña" name="password"/>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-            </div>
+            </div><br>
             <div class="row">
-                <div class="col-xs-8">
+                {{-- <div class="col-xs-8">
                     <div class="checkbox icheck">
                         <label>
                             <input type="checkbox" name="remember"> Recordarme
                         </label>
                     </div>
+                </div><!-- /.col --> --}}
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat text-center">Ingresar</button>
                 </div><!-- /.col -->
-                <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Ingresar</button>
-                </div><!-- /.col -->
+                <div class="col-md-2"></div>
             </div>
-        </form>
+        </form><br>
 
         
 
-        <a href="{{ url('/password/reset') }}">{{ trans('adminlte_lang::message.forgotpassword') }}</a><br>
-        <a href="{{ url('/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
+        {{-- <a href="{{ url('/password/reset') }}">Olvidé mi contraseña</a><br> --}}
+        <a href="{{ url('/register') }}" class="text-center">Crear nueva cuenta</a>
 
     </div><!-- /.login-box-body -->
 
