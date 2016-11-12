@@ -92,7 +92,7 @@ desired effect
             </div>
 
             <div class="col-md-6">
-              <div class="box">
+              <div class="box box-primary">
                 <div class="box-header with-border">
                   <h3 class="box-title">Ranking de participantes</h3>
                 </div>
@@ -101,9 +101,9 @@ desired effect
                   <table class="table table-bordered">
                     <tbody>
                       <tr>
-                        <th>Usuario</th>
-                        <th>Aportes</th>
-                        <th>Likes</th>
+                        <th class="col-md-6">Usuario</th>
+                        <th class="col-md-3">Aportes</th>
+                        <th class="col-md-3">Likes</th>
                       </tr>
                       <tr>
                         <td>Manuel Hidalgo</td>
