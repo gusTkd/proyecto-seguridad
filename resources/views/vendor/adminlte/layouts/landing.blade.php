@@ -46,7 +46,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><b>Pasa-MAC</b></a>
+                <!-- <a class="navbar-brand" href="#"><b>Pasa-MAC</b></a> -->
+                <img class="text-center" src="/img/logo-menu.png" alt="">
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -78,13 +79,13 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <h3></h3>
                 </div>
                 <div class="col-lg-2">
-                    
+
                 </div>
                 <div class="col-lg-8">
                     <img class="img-responsive" src="{{ asset('/img/app-bg.png') }}" alt="">
                 </div>
                 <div class="col-lg-2">
-                    
+
                 </div>
             </div>
         </div> <!--/ .container -->
@@ -269,7 +270,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <div id="c">
         <div class="container">
             <p>
-                <strong>Copyright &copy; 2016 <a href="#">Pasa-MAC</a></strong>. Creado por: <a href="#">Pasa_MAC</a>
+                <strong>Copyright &copy; 2016 <a href="#">Pasa-MAC</a></strong>. Creado por: <a href="#">Pasa-MAC</a>
             </p>
 
         </div>

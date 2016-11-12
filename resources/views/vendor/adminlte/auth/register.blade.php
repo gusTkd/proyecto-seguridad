@@ -11,7 +11,7 @@
         <div class="register-box">
             @if (count($errors) > 0)
                 <div class="alert alert-danger">
-                    <strong>Ups!</strong> {{ trans('adminlte_lang::message.someproblems') }}<br><br>
+                    <strong>Ups!</strong> Hubo algunos problemas con tu registro<br><br>
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>

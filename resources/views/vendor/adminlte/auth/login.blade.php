@@ -24,7 +24,7 @@
         <div class="login-box-body">
           <div class="text-center">
               <!-- <a href="{{ url('/home') }}"><b>Pasa</b>MAC</a> -->
-              <img class="text-center" src="{{ asset('/img/logo-login.png') }}" alt="">
+              <img class="text-center" src="/img/logo-login.png" alt="">
           </div><!-- /.login-logo -->
           <p class="login-box-msg"> Inicio de sesión</p>
         <form action="{{ url('/login') }}" method="post">
