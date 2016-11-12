@@ -5,12 +5,10 @@
 @endsection
 
 @section('content')
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" background:"{{ asset('/img/fondo-login.jpg') }}">
     <div id="app">
         <div class="login-box">
-            <div class="login-logo">
-                <a href="{{ url('/home') }}"><b>Pasa</b>MAC</a>
-            </div><!-- /.login-logo -->
+
 
         @if (count($errors) > 0)
             <div class="alert alert-danger">
@@ -24,12 +22,16 @@
         @endif
 
         <div class="login-box-body">
-        <p class="login-box-msg"> Inicio de sesión</p>
+          <div class="text-center">
+              <!-- <a href="{{ url('/home') }}"><b>Pasa</b>MAC</a> -->
+              <img class="text-center" src="{{ asset('/img/logo-login.png') }}" alt="">
+          </div><!-- /.login-logo -->
+          <p class="login-box-msg"> Inicio de sesión</p>
         <form action="{{ url('/login') }}" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group has-feedback">
-                <input type="email" class="form-control" placeholder="Correo" name="email"/>
-                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                <input type="email" class="form-control" placeholder="Usuario" name="email"/>
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
                 <input type="password" class="form-control" placeholder="Contraseña" name="password"/>

@@ -9,10 +9,6 @@
 <body class="hold-transition register-page">
     <div id="app">
         <div class="register-box">
-            <div class="register-logo">
-                <a href="{{ url('/home') }}"><b>Pasa</b>MAC</a>
-            </div>
-
             @if (count($errors) > 0)
                 <div class="alert alert-danger">
                     <strong>Ups!</strong> {{ trans('adminlte_lang::message.someproblems') }}<br><br>
@@ -25,7 +21,10 @@
             @endif
 
             <div class="register-box-body">
-                <p class="login-box-msg">{{ trans('adminlte_lang::message.registermember') }}</p>
+                <div class="text-center">
+                    <img class="text-center" src="{{ asset('/img/logo-login.png') }}" alt="">
+                </div>
+                <p class="login-box-msg">Registro de nuevo usuario</p>
                 <form action="{{ url('/register') }}" method="post">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -36,15 +35,18 @@
 
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" placeholder="Apellido paterno" name="a_paterno" value="{{ old('a_paterno') }}"/>
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
 
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" placeholder="Apellido materno" name="a_materno" value="{{ old('a_materno') }}"/>
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
 
                     <div class="form-group has-feedback">
                         <label for="fecha_nacimiento">Fecha de nacimiento</label>
                         <input type="date" class="form-control" name="fecha_nacimiento" value="{{ old('fecha_nacimiento') }}">
+                        <span class="glyphicon glyphicon-date form-control-feedback"></span>
                     </div>
 
                     <div class="form-group has-feedback">
@@ -98,12 +100,12 @@
                             </div>
                         </div><!-- /.col -->
                         <div class="col-xs-4 col-xs-push-1">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat">{{ trans('adminlte_lang::message.register') }}</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-flat">Registrar</button>
                         </div><!-- /.col -->
                     </div>
                 </form>
 
-                <a href="{{ url('/login') }}" class="text-center">{{ trans('adminlte_lang::message.membreship') }}</a>
+                <a href="{{ url('/login') }}" class="text-center">Ya tengo una cuenta</a>
             </div><!-- /.form-box -->
         </div><!-- /.register-box -->
     </div>
