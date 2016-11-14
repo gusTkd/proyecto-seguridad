@@ -52,8 +52,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#home" class="smoothScroll">Inicio</a></li>
-                    <li><a href="#desc" class="smoothScroll">Descripción</a></li>
-                    <li><a href="#showcase" class="smoothScroll">Instrucciones</a></li>
+                    <li><a href="#desc" class="smoothScroll">Pasa-MAC</a></li>
+                    <li><a href="#showcase" class="smoothScroll">Funciones</a></li>
                     <li><a href="#contact" class="smoothScroll">Contacto</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -75,43 +75,43 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             <div class="row centered">
                 <div class="col-md-12">
                   <div class="box-body">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="/img/slide1.png" alt="First slide">
+                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img src="/img/slide1.png" alt="First slide">
 
-                    <div class="carousel-caption">
+                            <div class="carousel-caption">
 
-                    </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="/img/slide2.png" alt="Second slide">
+
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="/img/slide3.png" alt="Third slide">
+
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                          <span class="fa fa-angle-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                          <span class="fa fa-angle-right"></span>
+                        </a>
+                      </div>
                   </div>
-                  <div class="item">
-                    <img src="/img/slide2.png" alt="Second slide">
-
-                    <div class="carousel-caption">
-
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="/img/slide3.png" alt="Third slide">
-
-                    <div class="carousel-caption">
-
-                    </div>
-                  </div>
-                </div>
-                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                  <span class="fa fa-angle-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                  <span class="fa fa-angle-right"></span>
-                </a>
-              </div>
-            </div>
                 </div>
             </div>
         </div> <!--/ .container -->
@@ -123,23 +123,23 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <div id="intro">
         <div class="container">
             <div class="row centered">
-                <h1>{{ trans('adminlte_lang::message.designed') }}</h1>
+                <h1>Plataforma especial para estudiantes de Matemáticas Aplicadas y Computación</h1>
                 <br>
                 <br>
                 <div class="col-lg-4">
-                    <img src="{{ asset('/img/intro01.png') }}" alt="">
-                    <h3></h3>
-                    <p><a href="#"></a><a href="#"></a><a href="#"></a></p>
+                    <img src="{{ asset('/img/registro.png') }}" alt="">
+                    <h3>Registrate</h3>
+                    <p>Registro único para estudiantes de MAC.</p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="{{ asset('/img/intro02.png') }}" alt="">
-                    <h3></h3>
-                    <p></p>
+                    <img src="{{ asset('/img/descarga.png') }}" alt="">
+                    <h3>Descarga</h3>
+                    <p>Encuentra y descarga tareas, proyectos y exámenes de la carrera.</p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="{{ asset('/img/intro03.png') }}" alt="">
-                    <h3></h3>
-                    <p></p>
+                    <img src="{{ asset('/img/graduacion.png') }}" alt="">
+                    <h3>Graduate</h3>
+                    <p>Se parte de esta comunidad, ayuda, recibe ayuda y graduate!</p>
                 </div>
             </div>
             <br>
@@ -151,41 +151,27 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <div id="features">
         <div class="container">
             <div class="row">
-                <h1 class="centered">{{ trans('adminlte_lang::message.whatnew') }}</h1>
+                <h1 class="centered">Todo sobre Pasa-MAC</h1>
                 <br>
                 <br>
                 <div class="col-lg-6 centered">
-                    <img class="centered" src="{{ asset('/img/mobile.png') }}" alt="">
+                    <img class="centered" src="{{ asset('/img/logo2.png') }}" alt="">
                 </div>
 
                 <div class="col-lg-6">
-                    <h3>{{ trans('adminlte_lang::message.features') }}</h3>
+                    <h3>¡La mejor herramienta para concluir la carrera!</h3>
                     <br>
                     <!-- ACCORDION -->
                     <div class="accordion ac" id="accordion2">
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                    {{ trans('adminlte_lang::message.design') }}
+                                    ¿Qué es Pasa-MAC?
                                 </a>
                             </div><!-- /accordion-heading -->
                             <div id="collapseOne" class="accordion-body collapse in">
                                 <div class="accordion-inner">
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div><!-- /accordion-inner -->
-                            </div><!-- /collapse -->
-                        </div><!-- /accordion-group -->
-                        <br>
-
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                    {{ trans('adminlte_lang::message.retina') }}
-                                </a>
-                            </div>
-                            <div id="collapseTwo" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p>Es una plataforma estudiantil creada por estudiantes de la carrera de Lic. en Matemáticas Aplicadas y Computación, donde encontrarás tareas, proyectos y exámenes de todos los semestres y profesores.</p>
                                 </div><!-- /accordion-inner -->
                             </div><!-- /collapse -->
                         </div><!-- /accordion-group -->
@@ -194,12 +180,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                                    {{ trans('adminlte_lang::message.support') }}
+                                    ¿Cómo nació Pasa-MAC?
                                 </a>
                             </div>
                             <div id="collapseThree" class="accordion-body collapse">
                                 <div class="accordion-inner">
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p>Entendemos lo complicado que es terminar la carrera, es por eso que decidimos desarrollar una plataforma o comunidad donde todos nos apoyemos y sea más fácil concluir nuestros estudios.</p>
                                 </div><!-- /accordion-inner -->
                             </div><!-- /collapse -->
                         </div><!-- /accordion-group -->
@@ -207,13 +193,28 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
                         <div class="accordion-group">
                             <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                    ¿Cómo funciona Pasa-MAC?
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p>El objetivo es formar una comunidad estudiantil donde los alumnos de MAC se registren, aporte al subir tareas, proyectos o exámenes, pueda descargar éstos y calificar el contenido.</p>
+                                </div><!-- /accordion-inner -->
+                            </div><!-- /collapse -->
+                        </div><!-- /accordion-group -->
+                        <br>
+
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                                    {{ trans('adminlte_lang::message.responsive') }}
+                                    ¿Tiene algún costo?
                                 </a>
                             </div>
                             <div id="collapseFour" class="accordion-body collapse">
                                 <div class="accordion-inner">
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p>Tenemos bien claro que para terminar una carrera se necesita el apoyo de nuestros compañeros, por lo que esto no tiene ningún costo, con tus aportaciones a la plataforma nos ayudas a todos!</p>
                                 </div><!-- /accordion-inner -->
                             </div><!-- /collapse -->
                         </div><!-- /accordion-group -->
@@ -229,27 +230,60 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <div id="showcase">
         <div class="container">
             <div class="row">
-                <h1 class="centered">{{ trans('adminlte_lang::message.screenshots') }}</h1>
+                <h1 class="centered">Funciones</h1>
                 <br>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        </ol>
+                
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="{{ asset('/img/item-01.png') }}" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="{{ asset('/img/item-02.png') }}" alt="">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-4 text-center">
+                           <img class="centered" src="{{ asset('/img/logo-login.png') }}" alt=""><br><br><br>
+                           <a href="{{ url('/register') }}"><button type="button" class="btn btn-block btn-success btn-lg">Registrar</button></a>
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <div class="box-body">
+                              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                                  <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="item active">
+                                    <img src="/img/minislide1.jpg" alt="First slide">
+
+                                    <div class="carousel-caption">
+                                      Responsivo
+                                    </div>
+                                  </div>
+                                  <div class="item">
+                                    <img src="/img/minislide1.jpg" alt="Second slide">
+
+                                    <div class="carousel-caption">
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="item">
+                                    <img src="/img/minislide1.jpg" alt="Third slide">
+
+                                    <div class="carousel-caption">
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                  <span class="fa fa-angle-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                  <span class="fa fa-angle-right"></span>
+                                </a>
+                              </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                
             </div>
             <br>
             <br>
@@ -262,12 +296,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <div id="footerwrap">
         <div class="container">
             <div class="col-lg-5">
-                <h3>Dirección</h3>
+                <h3>Dudas o sugerencias</h3>
                 <p>
-                    Av. Greenville 987,<br/>
-                    New York,<br/>
-                    90873<br/>
-                    United States
+                    Si tienes alguna duda sobre como funciona, recomendación o idea de como mejorar la plataforma, no dudes en mandarnos un correo, se parte de esta gran comunidad!
                 </p>
             </div>
 
