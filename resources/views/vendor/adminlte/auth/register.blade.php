@@ -6,7 +6,7 @@
 
 @section('content')
 
-<body class="hold-transition register-page">
+<body class="hold-transition register-page" style="background: url(/img/fondo-login.jpg) no-repeat;">
     <div id="app">
         <div class="register-box">
             @if (count($errors) > 0)
@@ -96,7 +96,7 @@
                         </div><!-- /.col -->
                         <div class="col-xs-6">
                             <div class="form-group">
-                                <button type="button" class="btn btn-block btn-flat" data-toggle="modal" data-target="#termsModal">{{ trans('adminlte_lang::message.terms') }}</button>
+                                Acepto los<a href="#" data-toggle="modal" data-target="#terminos"> términos</a>
                             </div>
                         </div><!-- /.col -->
                         <div class="col-xs-4 col-xs-push-1">
@@ -112,7 +112,7 @@
 
     @include('adminlte::layouts.partials.scripts_auth')
 
-    @include('adminlte::auth.terms')
+    
 
     <script>
         $(function () {
@@ -125,5 +125,28 @@
     </script>
 
 </body>
+
+
+<!-- ******************************** MODAL ************************ -->
+<div id="terminos" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Terminos y condicones</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 @endsection

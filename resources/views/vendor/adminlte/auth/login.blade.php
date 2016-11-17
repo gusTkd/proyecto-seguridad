@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<body class="hold-transition login-page" background:"{{ asset('/img/fondo-login.jpg') }}">
+<body class="hold-transition login-page" style="background: url(/img/fondo-login.jpg) no-repeat;">
     <div id="app">
         <div class="login-box">
 
@@ -30,7 +30,7 @@
         <form action="{{ url('/login') }}" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group has-feedback">
-                <input type="email" class="form-control" placeholder="Usuario" name="email"/>
+                <input type="text" class="form-control" placeholder="Usuario" name="usuario"/>
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
